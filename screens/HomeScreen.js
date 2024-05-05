@@ -7,9 +7,12 @@ import { DIRECTION_API } from "@env";
 import { useDispatch } from "react-redux";
 import { setDestination, setOrigin } from "../slices/navSlice";
 import NavFavorites from "../components/NavFavorites";
+import { Icon } from "@rneui/themed";
+import { useNavigation } from "@react-navigation/native";
 
 export default function HomeScreen() {
   const dispatch = useDispatch();
+
   return (
     <SafeAreaView className="bg-white h-full">
       <View className="pl-5">
